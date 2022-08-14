@@ -32,7 +32,7 @@ else()
     list(APPEND CUDA_NVCC_FLAGS "-gencode arch=compute_60,code=sm_60")
     list(APPEND CUDA_NVCC_FLAGS "-gencode arch=compute_61,code=sm_61")
     list(APPEND CUDA_NVCC_FLAGS "-gencode arch=compute_62,code=sm_62")
-    list(APPEND CUDA_NVCC_FLAGS "-gencode arch=compute_86,code=sm_86")
+    
     if(NOT CUDA_VERSION VERSION_LESS 9.0)
         list(APPEND CUDA_NVCC_FLAGS "-gencode arch=compute_70,code=sm_70")
     endif()
